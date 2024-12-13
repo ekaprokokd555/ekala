@@ -3,10 +3,10 @@ import time
 
 # Setup AWS Boto3 client
 ec2 = boto3.client('ec2', region_name='us-west-2')  # Ganti dengan region AWS Anda
-key_name = 'ORA.pem'  # Ganti dengan nama key pair AWS Anda
-ami_id = 'ami-0e2c8caa4b6378d8c'  # Ganti dengan ID AMI yang sesuai (misalnya, Ubuntu 20.04)
+key_name = 'your-key-pair'  # Ganti dengan nama key pair AWS Anda
+ami_id = 'ami-0c55b159cbfafe1f0'  # Ganti dengan ID AMI yang sesuai (misalnya, Ubuntu 20.04)
 instance_type = 't2.micro'  # Ganti dengan instance type yang sesuai (t2.micro untuk Free Tier)
-security_group_id = 'sg-0df852efd3ff18104'  # Ganti dengan ID security group yang sesuai
+security_group_id = 'sg-xxxxxxxx'  # Ganti dengan ID security group yang sesuai
 
 # 1. Membuat EC2 instance
 def create_ec2_instance():
